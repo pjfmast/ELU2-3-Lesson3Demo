@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DemoSession": {
+    "SessionDemo": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

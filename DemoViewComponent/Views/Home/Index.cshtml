@@ -6,3 +6,21 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div>
+    <div>
+        @*Invoke alternative 1:
+        - use taghelper <vc:name-of-view-component>
+        - you need to extend _ViewImports with
+            @addTagHelper *, ViewComponentsDemo 
+         *@
+        <span>As taghelper</span>
+        <vc:demo></vc:demo>
+    </div>
+
+    <div>
+        @*Invoke alternative 2:*@
+        <span>As Component.InvokeAsync</span>
+        @await Component.InvokeAsync("Demo")
+    </div>
+</div>

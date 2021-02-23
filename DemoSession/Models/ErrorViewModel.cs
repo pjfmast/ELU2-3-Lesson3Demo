@@ -1,6 +1,6 @@
 using System;
 
-namespace DemoSession.Models {
+namespace SessionDemo.Models {
     public class ErrorViewModel {
         public string RequestId { get; set; }
 
