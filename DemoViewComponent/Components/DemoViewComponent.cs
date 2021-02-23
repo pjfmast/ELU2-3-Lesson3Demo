@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 using ViewComponentsDemo.Models;
 
+// todo 1. Create a ViewComponent in Components
 namespace ViewComponentsDemo.Components {
     public class DemoViewComponent : ViewComponent {
         public IViewComponentResult Invoke() {

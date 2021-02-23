@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿// todo 2. create a ViewModel
 namespace ViewComponentsDemo.Models {
     public class ViewModelCurrentDateTime {
         public string Message { get; set; }

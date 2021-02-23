@@ -19,10 +19,12 @@ namespace SessionDemo {
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
+            // todo 1. add services for storage and Session
             services.AddMemoryCache();
             services.AddSession(options => {
                 options.IdleTimeout = TimeSpan.FromSeconds(20);
             });
+
             services.AddControllersWithViews();
         }
 
@@ -41,6 +43,8 @@ namespace SessionDemo {
             app.UseRouting();
 
             app.UseAuthorization();
+
+            // todo 2. add middleware for Session
             app.UseSession();
 
             app.UseEndpoints(endpoints => {
